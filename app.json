@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "Hiking",
+    "slug": "Hiking",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/hikeMonogram.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.rokasss9.Hiking"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/hikeLogo.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.rokasss9.Hiking"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/hikeMonogram.png"
+    },
+    "plugins": [
+      [
+        "@rnmapbox/maps",
+        {
+          "RNMapboxMapsImpl": "mapbox",
+          "RNMapboxMapsDownloadToken": ""
+        }
+      ],
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/hikeLogo.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      "expo-secure-store"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "e497087e-b284-4d4f-a018-20b4dae87a91"
+      }
+    }
+  }
+}
